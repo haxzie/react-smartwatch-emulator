@@ -1,0 +1,79 @@
+.watchContainer {
+    width: 400px;
+    min-width: 400px;
+    height: 450px;
+    position: relative;
+
+
+    .belt {
+        width: 170px;
+        background: #0e0e0e;
+        height: 100%;
+        border-radius: 20px;
+        margin: 0 auto;
+        box-shadow: 5px 10px 20px #05050533;
+    }
+
+    .frame {
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        width: 230px;
+        height: 250px;
+        margin: auto;
+        background: linear-gradient(-45deg, #161616, #202020);
+        border-radius: 40px;
+        box-shadow: 5px 10px 20px #05050533;
+        padding: 15px; 
+    }
+
+    .watchButton {
+        position: absolute;
+        right: 60px;
+        top: 150px;
+        margin: auto 0;
+        width: 50px;
+        height: 60px;
+        border-radius: 0 10px 10px 0;
+        background: linear-gradient(45deg, #1a1a1a, #2b2b2b);
+    }
+
+    .buttonArea {
+        position: absolute;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        align-items: center;
+        left: 0;
+        right: 0;
+        bottom: 40px;
+        margin: 0 auto;
+        width: 150px;
+        
+        i {
+            color: #a5a2a2;
+            font-size: 18px;
+            background-color: #00000000;
+            padding: 7px;
+            border-radius: 50%;
+            transition: 0.3s all ease-in-out;
+
+            &:hover {
+                cursor: pointer;
+                background-color: #1f1f1f;
+            }
+
+            &:active {
+                transform: scale(0.8);
+            }
+
+            &.active {
+                color: #ffffff;
+                background-color: #0059ff;
+            }
+        }
+
+    }
+}

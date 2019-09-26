@@ -1,0 +1,13 @@
+.header {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px;
+  border-bottom: 1px solid #2c2c2c;
+
+  h1 {
+    font-size: 1.2em;
+    color: #0059ff;
+  }
+}

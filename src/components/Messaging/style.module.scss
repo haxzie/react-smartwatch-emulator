@@ -1,0 +1,85 @@
+.messagingScreen {
+  position: relative;
+  background-color: #272727;
+  height: 100%;
+  width: 100%;
+  overflow-y: auto;
+  overflow-x: hidden;
+
+  .messagePopup {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: 99;
+    background-color: #272727;
+    top: 0;
+    padding: 10px;
+
+    .header {
+      display: flex;
+      flex-direction: row;
+      justify-content: flex-end;
+      padding: 5px 10px;
+      border-bottom: 1px solid #333333;
+
+      i {
+        padding: 5px;
+        color: #e2e2e2;
+        border-radius: 50%;
+        transition: 0.3s all ease-in-out;
+
+        &:hover {
+          cursor: pointer;
+          background-color: #0059ff;
+        }
+
+        &:active {
+          transform: scale(0.95);
+        }
+      }
+    }
+
+    h4 {
+      font-size: 1.3em;
+      font-weight: bold;
+    }
+  }
+
+  .messageList {
+    display: flex;
+    flex-direction: column;
+
+    .messageItem {
+      display: flex;
+      flex-direction: column;
+      padding: 3px 10px;
+      border-bottom: 1px solid #333333;
+      transition: 0.3s all ease-in-out;
+
+      &:hover {
+          cursor: pointer;
+          background-color: #0059ff;
+      }
+
+      &:active {
+          transform: scale(0.97);
+      }
+
+      h4 {
+        font-weight: bold;
+        padding: 0;
+        margin: 0;
+      }
+
+      p {
+        margin: 0;
+        opacity: 0.5;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        display: -webkit-box;
+        -webkit-line-clamp: 1;
+        -webkit-box-orient: vertical;
+      }
+    }
+  }
+}
